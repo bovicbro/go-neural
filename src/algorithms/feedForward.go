@@ -1,11 +1,19 @@
-package FeedForward
+package Algorithms
 
-import "goNeural/dataStructure"
+import (
+	"goNeural/dataStructure"
+	"math"
+)
 
-type FeedForward interface {
-	ff(n neuralNetwork.Network) neuralNetwork.Network
+func FeedForward(nw NeuralNetwork.Network) NeuralNetwork.Network {
+
+	return nw
 }
 
-func ff(n neuralNetwork.Network) neuralNetwork.Network {
-	return n
+func nodeFeedForward(n NeuralNetwork.Node) {
+
+}
+
+func activationFunction(x float64) float64 {
+	return 1 / (1 + math.Exp(-x))
 }

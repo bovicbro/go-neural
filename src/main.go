@@ -1,8 +1,12 @@
 package main
 
-import "goNeural/dataStructure"
+import (
+	"goNeural/algorithms"
+	"goNeural/dataStructure"
+)
 
 func main() {
-	nn := neuralNetwork.NewNetwork([]int{10, 8, 8, 8, 10})
+	nn := NeuralNetwork.NewNetwork([]int{10, 8, 8, 8, 10})
 	nn.Print()
+	nn = Algorithms.FeedForward(nn)
 }
