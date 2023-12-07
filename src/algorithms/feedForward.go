@@ -10,7 +10,7 @@ func FeedForward(nw NeuralNetwork.Network) NeuralNetwork.Network {
 	return nw
 }
 
-func nodeFeedForward(n NeuralNetwork.Node) {
+func nodeFeedForward(c *NeuralNetwork.Connection) {
 
 }
 
